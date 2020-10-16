@@ -11,6 +11,7 @@ using MySql.Data.MySqlClient;
 using System.Net.Mail;
 using System.Drawing.Printing;
 using System.IO;
+using System.Diagnostics;
 
 namespace BücherDB2._0_Online
 {
@@ -121,6 +122,8 @@ namespace BücherDB2._0_Online
             if (label23.Text == "Schelcht") { progressBar1.Value = 25; }
             if (label23.Text == "Seher Schlecht") { progressBar1.Value = 0; }
 
+            //PlugIn Tool
+            if (label18.Text == "Anime") { linkLabel1.Text = "weiter infos zur Anime"; } else { linkLabel1.Text = ""; }
 
 
         }
@@ -132,6 +135,11 @@ namespace BücherDB2._0_Online
 
             mail_to_webseit mail = new mail_to_webseit("ausl",testinhalt,label26.Text,textBox1.Text);
             mail.Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://plugins.buch-archiv20-software.de/AnimeFanSubSaystem/afss_red.php?xml=" + label2.Text + ".xml");
         }
     }
 }

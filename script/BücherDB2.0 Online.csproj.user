@@ -4,9 +4,9 @@
     <PublishUrlHistory>publish\</PublishUrlHistory>
     <InstallUrlHistory />
     <SupportUrlHistory>https://www.buch-archiv20-software.de/pages/support.php|http://buecherei2-online.tk/pages/support.php|http://buecher20.cwsurf.de/support</SupportUrlHistory>
-    <UpdateUrlHistory>https://server.buch-archiv20-software.de/update_system/|http://93.190.92.33/bucher20/update/</UpdateUrlHistory>
+    <UpdateUrlHistory>https://philipplindner-media-network.de/buch20/update_system/|https://server.buch-archiv20-software.de/update_system/|http://93.190.92.33/bucher20/update/</UpdateUrlHistory>
     <BootstrapperUrlHistory />
-    <ErrorReportUrlHistory>https://www.buch-archiv20-software.de/pages/support.php|http://buecherei2-online.tk/pages/support.php|http://buecher20.cwsurf.de/support</ErrorReportUrlHistory>
+    <ErrorReportUrlHistory>https://www.buch-archiv20-software.de/pages/prog_fehler.php.php|https://www.buch-archiv20-software.de/pages/support.php|http://buecherei2-online.tk/pages/support.php|http://buecher20.cwsurf.de/support</ErrorReportUrlHistory>
     <FallbackCulture>de-DE</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
   </PropertyGroup>

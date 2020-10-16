@@ -90,7 +90,7 @@ namespace BücherDB2._0_Online
             }
             if (progressBar1.Value == 30) { label3.Text = "Suche verbung zum Server"; }
             if (progressBar1.Value == 40) { label3.Text = "Verbindung zum Server wird Hergestelt"; }
-            if (progressBar1.Value == 50) { label3.Text = "Lade Bnutzer Profilr"; }
+            if (progressBar1.Value == 50) { label3.Text = "Lade Benutzer Profilr"; }
             if (progressBar1.Value == 60) { label3.Text = "Lade Programm Profirl"; }
             if (progressBar1.Value == 70) { label3.Text = "Progamm Vorbreiten"; }
             if (progressBar1.Value == 80) { label3.Text = "Programm wierd Gestartet"; }

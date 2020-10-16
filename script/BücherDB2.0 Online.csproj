@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BücherDB2._0_Online</RootNamespace>
     <AssemblyName>BücherDB2.0 Online</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <SccProjectName>SAK</SccProjectName>
@@ -28,7 +28,7 @@
     <UpdatePeriodically>true</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <UpdateUrl>https://server.buch-archiv20-software.de/update_system/</UpdateUrl>
+    <UpdateUrl>https://philipplindner-media-network.de/buch20/update_system/</UpdateUrl>
     <SupportUrl>https://www.buch-archiv20-software.de/pages/support.php</SupportUrl>
     <ErrorReportUrl>https://www.buch-archiv20-software.de/pages/support.php</ErrorReportUrl>
     <TargetCulture>de-DE</TargetCulture>
@@ -37,7 +37,7 @@
     <SuiteName>Philipp Lindner Media &amp; Netzwerg Gruppe</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>programm.html</WebPage>
-    <ApplicationRevision>14</ApplicationRevision>
+    <ApplicationRevision>22</ApplicationRevision>
     <ApplicationVersion>2.0.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -265,6 +265,11 @@
     <BootstrapperPackage Include=".NETFramework,Version=v4.7">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7 %28x86 und x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 und x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

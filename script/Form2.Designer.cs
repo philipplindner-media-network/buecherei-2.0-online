@@ -109,6 +109,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label39 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -125,6 +133,9 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox12.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -132,6 +143,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(13, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -700,7 +712,6 @@
             this.webBrowser1.Size = new System.Drawing.Size(673, 202);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("http://www.buch-archiv20-software.de/pages/programm-infobox.php", System.UriKind.Absolute);
-
             // 
             // groupBox3
             // 
@@ -941,6 +952,83 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "(DB) Host:";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.groupBox13);
+            this.tabPage3.Controls.Add(this.groupBox12);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(703, 630);
+            this.tabPage3.TabIndex = 6;
+            this.tabPage3.Text = "Plagin";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.textBox14);
+            this.groupBox13.Controls.Add(this.label40);
+            this.groupBox13.Location = new System.Drawing.Point(4, 15);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(673, 51);
+            this.groupBox13.TabIndex = 1;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Plagin Config";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(79, 23);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(588, 20);
+            this.textBox14.TabIndex = 1;
+            this.textBox14.TextChanged += new System.EventHandler(this.TextBox14_TextChanged);
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(6, 26);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(68, 13);
+            this.label40.TabIndex = 0;
+            this.label40.Text = "Plagin Orten:";
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.button6);
+            this.groupBox12.Controls.Add(this.label39);
+            this.groupBox12.Controls.Add(this.textBox13);
+            this.groupBox12.Location = new System.Drawing.Point(4, 72);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(586, 65);
+            this.groupBox12.TabIndex = 0;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "AnimeFanSubSystem";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(379, 19);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(170, 23);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "Programm Starten";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(7, 24);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(46, 13);
+            this.label39.TabIndex = 1;
+            this.label39.Text = "BuchID:";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(59, 21);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(314, 20);
+            this.textBox13.TabIndex = 0;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -977,6 +1065,11 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1063,5 +1156,13 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.TextBox textBox13;
     }
 }

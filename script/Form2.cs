@@ -14,6 +14,7 @@ using System.Threading;
 using System.Net;
 using System.Net.NetworkInformation;
 
+
 namespace BücherDB2._0_Online
 {
     public partial class Form2 : Form
@@ -84,6 +85,9 @@ namespace BücherDB2._0_Online
 
             if (Cserver == "yes") { label37.Text = "https://" + host + "/owncloud"; } else { label37.Text = "http://img4web.com/"; }
 
+            string pfad = Directory.GetCurrentDirectory();
+            textBox14.Text = pfad + "/PlagIn/";
+
         }   
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -148,6 +152,7 @@ namespace BücherDB2._0_Online
         {
             //BuchID kontrolle
             if (textBox1.Text == "") { textBox1.Text= DBIDG(15); }
+            if (comboBox2.Text== "Anime") { MessageBox.Show("Sie Konnen unser PlugIn \"AnimeFanSubSystem\" Verwenden um Nochmer daten zu erfassen");}
             try
             {
                 string connStrSV = @"SERVER=" + label2.Text + ";" +
@@ -258,6 +263,44 @@ namespace BücherDB2._0_Online
             infoB.Show();
         }
 
-        
+        private void button6_Click(object sender, EventArgs e)
+        {
+            String param_1 = textBox13.Text;
+            String param_2 = "";
+
+            if (param_1 == "") { param_2 = "x"; }else { param_2 = param_1; }
+
+            string time1 = System.DateTime.Now.ToShortDateString();
+            string id = DBIDG(5);
+            string datei = "startup" + time1 + ""+id+".bat";
+            string keyData = @"temp/"+datei;
+            string inputbat = "start "+textBox14.Text + "AnimeFanSubSystem.exe " + param_2 +"\n start " + textBox14.Text + "nanweb.exe -p=2377 -c";
+            File.WriteAllText(keyData, inputbat);
+            string pfad = Directory.GetCurrentDirectory();
+
+            string o1 = textBox14.Text;
+            string o2 = pfad + "/temp";
+
+            try
+            {
+                string[] textlist = Directory.GetFiles(o1, "*.txt");
+                foreach (string f in textlist)
+                {
+                    string fName = f.Substring(o1.Length);
+                    File.Copy(Path.Combine(o1, fName), Path.Combine(o2, fName), true);
+                }
+            }
+            catch (DirectoryNotFoundException dirNoFound)
+            {
+                MessageBox.Show(string.Format("Ein Feheler ist Aufgetreten!\nOrdner Nich Gefunden {0}\nACHTUNG: settings.txt Pfade Anpassen anpassen!", dirNoFound), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            Process.Start(pfad+"/temp/"+datei);
+        }
+
+        private void TextBox14_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

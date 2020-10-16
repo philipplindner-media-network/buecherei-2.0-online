@@ -228,5 +228,10 @@ namespace BücherDB2._0_Online
             progtyp Veditor = new progtyp(label7.Text);
             Veditor.Show();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://www.buch-archiv20-software.de/pages/server.php");
+        }
     }
 }
