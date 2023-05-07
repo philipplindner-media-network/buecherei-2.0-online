@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mail_to_webseit));
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -48,6 +49,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 55);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "mail_to_webseit";

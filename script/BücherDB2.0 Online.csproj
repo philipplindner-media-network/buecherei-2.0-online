@@ -18,26 +18,26 @@
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
     <TargetFrameworkProfile />
-    <PublishUrl>publish\</PublishUrl>
+    <PublishUrl>V:\B2O_script\buecherei-2.0-online-master\buecherei-2.0-online-master\script\Public\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Background</UpdateMode>
     <UpdateInterval>14</UpdateInterval>
     <UpdateIntervalUnits>Weeks</UpdateIntervalUnits>
     <UpdatePeriodically>true</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <UpdateUrl>https://philipplindner-media-network.de/buch20/update_system/</UpdateUrl>
-    <SupportUrl>https://www.buch-archiv20-software.de/pages/support.php</SupportUrl>
-    <ErrorReportUrl>https://www.buch-archiv20-software.de/pages/support.php</ErrorReportUrl>
+    <UpdateUrl>https://ddl.buch-archiv20-software.de/update_system/</UpdateUrl>
+    <SupportUrl>https://support.buch-archiv20-software.de/</SupportUrl>
+    <ErrorReportUrl>https://support.buch-archiv20-software.de/</ErrorReportUrl>
     <TargetCulture>de-DE</TargetCulture>
     <ProductName>Bücherei 2.0 Online</ProductName>
     <PublisherName>Philipp Lindner</PublisherName>
     <SuiteName>Philipp Lindner Media &amp; Netzwerg Gruppe</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>programm.html</WebPage>
-    <ApplicationRevision>22</ApplicationRevision>
+    <ApplicationRevision>23</ApplicationRevision>
     <ApplicationVersion>2.0.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -112,23 +112,23 @@
   <ItemGroup>
     <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\MySQL\MySQL Connector Net 6.9.5\Assemblies\v4.5\MySql.Data.dll</HintPath>
+      <HintPath>..\..\..\..\Bücherei2.0\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data.Entity.EF5, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\MySQL\MySQL Connector Net 6.9.5\Assemblies\v4.5\MySql.Data.Entity.EF5.dll</HintPath>
+      <HintPath>..\..\..\..\Bücherei2.0\MySql.Data.Entity.EF5.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data.Entity.EF6, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\MySQL\MySQL Connector Net 6.9.5\Assemblies\v4.5\MySql.Data.Entity.EF6.dll</HintPath>
+      <HintPath>..\..\..\..\Bücherei2.0\MySql.Data.Entity.EF6.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Fabric.Plugin, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\MySQL\MySQL Connector Net 6.9.5\Assemblies\v4.5\MySql.Fabric.Plugin.dll</HintPath>
+      <HintPath>..\..\..\..\Bücherei2.0\MySql.Fabric.Plugin.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Web, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\MySQL\MySQL Connector Net 6.9.5\Assemblies\v4.5\MySql.Web.dll</HintPath>
+      <HintPath>..\..\..\..\Bücherei2.0\MySql.Web.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -233,7 +233,6 @@
     <EmbeddedResource Include="scs.resx">
       <DependentUpon>scs.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="BücherDB2.0 Online_TemporaryKey.pfx" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -267,6 +266,11 @@
       <ProductName>Microsoft .NET Framework 4.7 %28x86 und x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 und x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.8 %28x86 und x64%29</ProductName>
@@ -285,6 +289,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\..\..\Bücherei2.0\MySql.Data.dll" />
+    <Analyzer Include="..\..\..\..\Bücherei2.0\MySql.Data.Entity.EF5.dll" />
+    <Analyzer Include="..\..\..\..\Bücherei2.0\MySql.Data.Entity.EF6.dll" />
+    <Analyzer Include="..\..\..\..\Bücherei2.0\MySql.Fabric.Plugin.dll" />
+    <Analyzer Include="..\..\..\..\Bücherei2.0\MySql.Web.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

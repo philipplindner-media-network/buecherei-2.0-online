@@ -84,7 +84,7 @@ namespace BücherDB2._0_Online
                 label22.Text = m13;
                 label23.Text = m14;
 
-                if (m12 == "") { pictureBox1.Load("https://arisatheotaku.files.wordpress.com/2012/04/lesen.jpg"); }
+                if (m12 == "") { pictureBox1.Load("https://prog-info-system.buch-archiv20-software.de/lesen.jpg"); }
                 else { pictureBox1.Load(m12); }
 
             }
@@ -137,9 +137,9 @@ namespace BücherDB2._0_Online
             mail.Show();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        /*private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://plugins.buch-archiv20-software.de/AnimeFanSubSaystem/afss_red.php?xml=" + label2.Text + ".xml");
-        }
+        }*/
     }
 }

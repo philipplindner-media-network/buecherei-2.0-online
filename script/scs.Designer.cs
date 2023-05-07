@@ -45,16 +45,17 @@
             this.pictureBox1.Location = new System.Drawing.Point(145, 99);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(319, 153);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Matura MT Script Capitals", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(117, 268);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(382, 50);
+            this.label1.Size = new System.Drawing.Size(365, 42);
             this.label1.TabIndex = 1;
             this.label1.Text = "Bücherei 2.0 Online";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

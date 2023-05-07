@@ -45,6 +45,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -70,7 +71,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 23);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Server Liste laden";
+            this.button1.Text = "Server Liste Local Laden";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -187,7 +188,7 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(199, 44);
+            this.linkLabel2.Location = new System.Drawing.Point(345, 44);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(99, 13);
             this.linkLabel2.TabIndex = 15;
@@ -195,11 +196,22 @@
             this.linkLabel2.Text = "Server Liste Online.";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(184, 39);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(155, 23);
+            this.button5.TabIndex = 16;
+            this.button5.Text = "Server Liste Online Laden";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(731, 240);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label7);
@@ -245,6 +257,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.Button button5;
     }
 }
 

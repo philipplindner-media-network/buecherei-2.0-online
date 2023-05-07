@@ -225,6 +225,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form5";
             this.Text = "Bücherei 2.0 ™ Online Regestreiung";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -55,32 +55,32 @@ namespace BücherDB2._0_Online
 
             //Prüfung für Programm Typ
             //Prüfung via Regestry
-            RegistryKey regtyp = Registry.LocalMachine;
-            RegistryKey DK = regtyp.OpenSubKey("Software\\Philipp Lindner Media & Network\\Bücherei 2.0 Online");
-            string progtyp=(string)DK.GetValue("typ");
+           //RegistryKey regtyp = Registry.LocalMachine;
+           //RegistryKey DK = regtyp.OpenSubKey("Software\\Philipp Lindner Media & Network\\Bücherei 2.0 Online");
+           //string progtyp=(string)DK.GetValue("typ");
             //Prüfing via XML Config (porg_typ.bxm)
             XmlDocument serverconfigXML = new XmlDocument();
             serverconfigXML.Load(pfad + "\\prog_typ.bxm");
             XmlNode ptyp = serverconfigXML.SelectSingleNode("/buch2online/typ");
             string pxml = ptyp.InnerText;
-            if (progtyp == "on" || pxml=="on") { label7.Text = "Onlein Version";}
-            if (progtyp == "st" || pxml=="st") { label7.Text = "Stand a lone (offline) Version"; }
-            if (progtyp == "po" || pxml=="po") { label7.Text = "Portable Version"; }
-            if (progtyp=="st")
+            if (pxml=="on") { label7.Text = "Onlein Version";}
+            if (pxml=="st") { label7.Text = "Stand a lone (offline) Version"; }
+            if (pxml=="po") { label7.Text = "Portable Version"; }
+            if (pxml=="st")
             {
                 MessageBox.Show("Stand a lone System wird gestertet", "[Stand a lone] Aktivet", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 comboBox1.Items.Add(pfad+"/server/st.bsvr");
             }
-            if (progtyp == "po" || pxml == "po")
+            if (pxml == "po")
             {
                 MessageBox.Show("Prtabele Version wird gestertet", "[Prtabel] Aktivet", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 comboBox1.Items.Add(pfad+"/server/portal.bsvr");
             }
-            if (progtyp == "on" || pxml == "on")
+            if (pxml == "on")
             {
                 MessageBox.Show("keine eigenstandigkeit (Stand a lone System)!", "[Stand a lone] Deaktivirt", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            if (progtyp == "" || pxml =="")
+            if (pxml =="")
             {
                 //Starte programzusatzeinstellung
                 progtyp Veditor2 = new progtyp(label7.Text);
@@ -105,7 +105,7 @@ namespace BücherDB2._0_Online
                     {
                         comboBox1.Items.Add(file);
 
-                        label5.Text = "Server Listen Aktualisirt!";
+                        label5.Text = "Server Listen Local Aktualisirt!";
 
                     }
                 }
@@ -116,8 +116,17 @@ namespace BücherDB2._0_Online
             }
             
         }
-        
-            
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            XmlDocument ServerListOnline = new XmlDocument();
+            ServerListOnline.Load("https://server.buch-archiv20-software.de/?out=xml");
+            XmlNode ServerOnline = ServerListOnline.SelectSingleNode("/serverliste/server");
+            comboBox1.Items.Add(ServerOnline.InnerText);
+            label5.Text = "Servcer Liste Online Aktualisirt!";
+ 
+        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -219,7 +228,7 @@ namespace BücherDB2._0_Online
         {
             string Version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             linkLabel1.Text = "Version: " + Version;
-            Process.Start("http://www.buch-archiv20-software.de/pages/verdion.php?version=" + Version);
+            Process.Start("https://prog-info-system.buch-archiv20-software.de/?go=ver&version=" + Version);
 
         }
 
@@ -231,7 +240,9 @@ namespace BücherDB2._0_Online
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://www.buch-archiv20-software.de/pages/server.php");
+            Process.Start("https://prog-info-system.buch-archiv20-software.de/?go=server");
         }
+
+        
     }
 }

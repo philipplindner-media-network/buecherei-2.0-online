@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>publish\</PublishUrlHistory>
+    <PublishUrlHistory>V:\B2O_script\buecherei-2.0-online-master\buecherei-2.0-online-master\script\Public\|V:\B2O_script\buecherei-2.0-online-master\buecherei-2.0-online-master\script\|publish\</PublishUrlHistory>
     <InstallUrlHistory />
     <SupportUrlHistory>https://www.buch-archiv20-software.de/pages/support.php|http://buecherei2-online.tk/pages/support.php|http://buecher20.cwsurf.de/support</SupportUrlHistory>
     <UpdateUrlHistory>https://philipplindner-media-network.de/buch20/update_system/|https://server.buch-archiv20-software.de/update_system/|http://93.190.92.33/bucher20/update/</UpdateUrlHistory>
     <BootstrapperUrlHistory />
-    <ErrorReportUrlHistory>https://www.buch-archiv20-software.de/pages/prog_fehler.php.php|https://www.buch-archiv20-software.de/pages/support.php|http://buecherei2-online.tk/pages/support.php|http://buecher20.cwsurf.de/support</ErrorReportUrlHistory>
+    <ErrorReportUrlHistory>https://www.buch-archiv20-software.de/pages/support.php|https://www.buch-archiv20-software.de/pages/prog_fehler.php.php|http://buecherei2-online.tk/pages/support.php|http://buecher20.cwsurf.de/support</ErrorReportUrlHistory>
     <FallbackCulture>de-DE</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
   </PropertyGroup>

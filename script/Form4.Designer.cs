@@ -39,6 +39,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -64,7 +65,6 @@
             this.label25 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -186,6 +186,16 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Medeinedaten";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(165, 125);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel1.TabIndex = 16;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "linkLabel1";
             // 
             // label22
             // 
@@ -416,17 +426,6 @@
             this.label24.Size = new System.Drawing.Size(335, 13);
             this.label24.TabIndex = 0;
             this.label24.Text = "Hiermit Kann man eine Anfrage für das Ausleihen des Mediums stellen";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(165, 125);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel1.TabIndex = 16;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "linkLabel1";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Form4
             // 

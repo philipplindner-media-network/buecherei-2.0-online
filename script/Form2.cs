@@ -83,7 +83,7 @@ namespace BücherDB2._0_Online
 
             ping.Text = IsConnectedToServer(host);
 
-            if (Cserver == "yes") { label37.Text = "https://" + host + "/owncloud"; } else { label37.Text = "http://img4web.com/"; }
+            if (Cserver == "yes") { label37.Text = "https://" + host + "/owncloud"; } else { label37.Text = "https://de.share-your-photo.com/"; }
 
             string pfad = Directory.GetCurrentDirectory();
             textBox14.Text = pfad + "/PlagIn/";
@@ -182,7 +182,7 @@ namespace BücherDB2._0_Online
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(label37.Text+"/?user=" +textBox3.Text);
+            Process.Start(label37.Text);
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -302,5 +302,6 @@ namespace BücherDB2._0_Online
         {
 
         }
+
     }
 }

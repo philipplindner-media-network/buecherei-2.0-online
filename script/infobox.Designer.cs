@@ -69,7 +69,6 @@
             // 
             this.logoPictureBox.BackColor = System.Drawing.Color.White;
             this.logoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.logoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoPictureBox.Image")));
             this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
             this.logoPictureBox.Name = "logoPictureBox";
             this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 6);
@@ -146,7 +145,7 @@
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.Location = new System.Drawing.Point(186, 310);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(270, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(269, 16);
             this.linkLabel1.TabIndex = 24;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "https://www.buch-archiv20-software.de";
@@ -159,6 +158,7 @@
             this.ClientSize = new System.Drawing.Size(574, 367);
             this.Controls.Add(this.tableLayoutPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "infobox";

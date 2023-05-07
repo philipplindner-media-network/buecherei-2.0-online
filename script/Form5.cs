@@ -110,5 +110,10 @@ namespace BücherDB2._0_Online
                 mail.Show();
             }
         }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -32,6 +32,8 @@ namespace BücherDB2._0_Online
         public scs()
         {
             InitializeComponent();
+            label2.Text = "0%";
+            label3.Text = "-";
             timer1.Tick += new EventHandler(timer_Tick);
             timer1.Interval = 2000;
             timer1.Start();
